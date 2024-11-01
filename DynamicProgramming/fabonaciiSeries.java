@@ -1,9 +1,14 @@
 package DynamicProgramming;
 
 public class fabonaciiSeries {
+    public static void main(String[] args) {
+        System.out.println("Tabulation: "+fibonaciiTabulation(4));
+        int DP[] = new int[5];
+        System.out.println("Memoization: " + fibonaciiMemoization(4, DP));
+    }
 
-    //storing in array without recursion
-    public static int fibonaciiNo(int n){
+    //storing in array without recursion //O(n)
+    public static int fibonaciiTabulation(int n){
         int f[] = new int[n+1];
         f[0]=0;
         f[1]=1;
@@ -16,8 +21,8 @@ public class fabonaciiSeries {
         
     }
 
-    //with recursion, DP, called Memoization
-    public static int fibonaciiDP(int n, int DP[]){
+    //with recursion, DP, called Memoization //O(n)
+    public static int fibonaciiMemoization(int n, int DP[]){
         if(n == 0 || n==1){
             return n;
         }
@@ -26,12 +31,8 @@ public class fabonaciiSeries {
             return DP[n];
         }
 
-        DP[n] = fibonaciiDP(n-1, DP)+fibonaciiDP(n-2, DP);
+        DP[n] = fibonaciiMemoization(n-1, DP)+fibonaciiMemoization(n-2, DP);
         return DP[n];
     }
-    public static void main(String[] args) {
-        System.out.println(fibonaciiNo(4));
-        int DP[] = new int[5];
-        System.out.println("With DP: " + fibonaciiDP(4, DP));
-    }
+    
 }
