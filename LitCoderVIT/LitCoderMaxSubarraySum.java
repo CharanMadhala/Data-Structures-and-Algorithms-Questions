@@ -34,6 +34,8 @@ public class LitCoderMaxSubarraySum {
         }else{
             doSomething(arr);
         }
+
+        sc.close();
         
     }
     

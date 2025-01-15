@@ -6,7 +6,7 @@ public class PrintReverseOfANumber {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int reverse = 0;
-        int i=0;
+       
         // 345
         while(n>0){
             int mod = n%10;
@@ -15,5 +15,6 @@ public class PrintReverseOfANumber {
         }
 
         System.out.println("reverse of "+ n +" is: "+ reverse);
+        sc.close();
     }
 }
