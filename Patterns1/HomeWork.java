@@ -2,6 +2,60 @@ package Patterns1;
 
 public class HomeWork {
     public static void main(String[] args) {
+        // Diamond Pattern - pending (and wrong approach)
+        for(int i=1;i<=4;i++){
+            // spaces
+            for(int j=0;j<4-i;j++){
+                System.out.print(" ");
+            }
+            // stars
+            int min = 4 - i;
+            int max = 4 + i;
+
+            // spaces - not required
+        }
+        // Hallow Rhombus Pattern
+    //      *****
+    //     *   *
+    //    *   *
+    //   *   *
+    //  *****
+        // for(int i=0;i<5;i++){
+        //     // Spaces
+        //     for(int j=0;j<=8-5-i;j++){
+        //         System.out.print(" ");
+        //     }
+        //     // Stars
+        //     for(int j=0;j<5;j++){
+        //         if(i==0 || i==4 || j==0 || j==4){
+        //             System.out.print("*");
+        //         }else{
+        //             System.out.print(" ");
+        //         }
+        //     }
+
+        //     System.out.println();
+        // }
+
+
+        // Solid Rhombus Pattern
+    //      *****
+    //     *****
+    //    *****
+    //   *****
+    //  *****
+        // for(int i=0;i<5;i++){
+        //     // spaces
+        //     for(int j=0;j<=8-5-i;j++){
+        //         System.out.print(" ");    
+        //     }
+        //     // stars
+        //     for(int j=0;j<5;j++){
+        //         System.out.print("*");
+        //     }
+
+        //     System.out.println();
+        // }
         // Butterfly pattern
         // *      *
         // **    **
