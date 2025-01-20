@@ -1,19 +1,99 @@
-package Patterns1;
+// package Patterns1;
 
 public class HomeWork {
     public static void main(String[] args) {
-        // Diamond Pattern - pending (and wrong approach)
-        for(int i=1;i<=4;i++){
-            // spaces
-            for(int j=0;j<4-i;j++){
-                System.out.print(" ");
-            }
-            // stars
-            int min = 4 - i;
-            int max = 4 + i;
 
-            // spaces - not required
-        }
+        // Palindromic pattern with no's
+    //      1
+    //     212
+    //    32123
+    //   4321234
+    //  543212345
+        // for(int i=1;i<=5;i++){
+        //     // spaces
+        //     for(int j=0;j<5-i;j++){
+        //         System.out.print(" ");
+        //     }
+
+        //     // numbers - first half
+        //     for(int j=i;j>0;j--){
+        //         System.out.print(j);
+        //     }
+        //     for(int j= 2; j< i+1; j++){
+        //         System.out.print(j);
+        //     }
+        //     System.out.println();
+        // }
+
+        // Number Pyramind
+    //      1 
+    //     2 2 
+    //    3 3 3 
+    //   4 4 4 4 
+    //  5 5 5 5 5 
+        // for(int i=1; i<=5; i++){
+        //     // spaces
+        //     for(int j=0; j<5-i;j++){
+        //         System.out.print(" ");
+        //     }
+        //     // Numbers
+        //     for(int j=0;j<i;j++){
+        //         System.out.print(i +" ");
+        //     }
+        //     System.out.println();
+        // }
+        
+        // Diamond Pattern
+    //      *
+    //     ***
+    //    *****
+    //   *******
+    //   *******
+    //    *****
+    //     ***
+    //      *
+        // // First half
+        // for(int i=1;i<=4;i++){
+        //     // spaces
+        //     for(int j=0;j<4-i;j++){
+        //         System.out.print(" ");
+        //     }
+        //     // stars
+
+        //    if(i==1){
+        //         System.out.print("*");
+                
+        //    }else{
+        //     for(int j=0; j< (i+i)-1; j++){
+        //         System.out.print("*");
+        //     }
+        //    }
+        //    System.out.println();
+           
+        //     // spaces - not required
+        // }
+        // // Second half
+        // for(int i=4;i>=1;i--){
+        //     // spaces
+        //     for(int j=0;j<4-i;j++){
+        //         System.out.print(" ");
+        //     }
+        //     // stars
+
+        //    if(i==1){
+        //         System.out.print("*");
+                
+        //    }else{
+        //     for(int j=0; j< (i+i)-1; j++){
+        //         System.out.print("*");
+        //     }
+        //    }
+        //    System.out.println();
+           
+        //     // spaces - not required
+        // }
+
+
         // Hallow Rhombus Pattern
     //      *****
     //     *   *
